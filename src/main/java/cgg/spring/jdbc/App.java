@@ -20,6 +20,7 @@ public class App
         //spring jdbc -> JdbcTemplate
         
         ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+//        ApplicationContext context = new AnnotationConfigApplicationContext(JdbcConfig.class);
         StudentDao studentDao = context.getBean("studentdao",StudentDao.class);
         
         //insert query
@@ -31,13 +32,13 @@ public class App
 //        System.out.println("Number of records inserted..."+cnt);
         
         //Insert method
-//        Student student= new Student();
-//        student.setId(1768);
-//        student.setName("Farooq");
-//        student.setCity("WNP");
+        Student student= new Student();
+        student.setId(1225);
+        student.setName("Ajay");
+        student.setCity("ADLB");
         
-//        int r = studentDao.insert(student);
-//        System.out.println("Student added "+r);
+        int r = studentDao.insert(student);
+        System.out.println("Student added "+r);
         
         //Update method
 //        Student student= new Student();
