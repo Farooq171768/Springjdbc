@@ -15,9 +15,9 @@
   		<property name="dataSource" ref="ds"/>
   	</bean>
   
-  	<!-- <bean id="studentdao" class="cgg.spring.jdbc.dao.StudentDaoImpl">
+  	 <bean id="studentdao" class="cgg.spring.jdbc.dao.StudentDaoImpl">
   		<property name="jdbcTemplate" ref="jdbcTemplate"/>
-  	</bean> -->
+  	</bean> 
   
   
   
